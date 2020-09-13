@@ -1,0 +1,42 @@
+html {
+    font-size: 1, 04vw;
+}
+
+
+.container {
+    width: 100%;
+    height: 24.4rem;
+    background-color: #333333;
+}
+
+.container__columns {
+    position: relative;
+    margin: auto;
+    max-width: 73.2rem;
+    width: 100%;
+}
+
+.container__column1 {
+    margin-right: 0.819%;
+    float: left;
+    width: 23.7704%;
+    height: 24.4rem;
+    background-color: whitesmoke;
+}
+
+.container__column2 {
+    margin-right: 0.819%;
+    margin-left: 0.819%;
+    float: left;
+    width: 49.180%;
+    height: 24.4rem;
+    background-color: #C35424;
+}
+
+.container__column3 {
+    width: 23.7704%;
+    margin-left: 0.819%;
+    float: left;
+    height: 24.4rem;
+    background-color: whitesmoke;
+}
