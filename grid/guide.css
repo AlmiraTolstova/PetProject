@@ -1,0 +1,211 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 20px; */
+  font-size: 1.0417vw;
+  overflow-x: hidden;
+}
+
+.container-table {
+  padding: 1rem 5rem 5rem 5rem;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: [row1] minmax(10px, max-content) [row2]minmax(10px, max-content) [row3]minmax(10px, max-content) [row4]minmax(10px, max-content);
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
+
+.item {
+  width: 23.6rem;
+  height: 23.6rem;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  background-color: tomato;
+  grid-auto-flow: dense;
+  place-self: center;
+
+}
+
+.item1 {}
+
+img {
+  
+ width: 100%;
+ align-self: stretch;
+}
+
+/* Шаг 2. Изменение  сетки */
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(100px, 200px) minmax(100px, 200px) minmax(100px, 200px) minmax(100px, 200px) minmax(100px, 200px) minmax(100px, 200px);
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-content: center;
+  grid-template-areas: 
+    'item-a item-b item-c'
+          
+    'item-d item-e item-f'
+    'item-g item-h item-i'
+    'item-j item-k item-l'
+  ;
+}
+
+.container2__item {
+  background-color: coral;
+  border-radius: 0.5rem;
+  text-align: center;
+
+}
+
+.item-a {
+  grid-area: item-a;
+}
+
+.item-b {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.item-e {
+  grid-column: 2;
+  grid-row: 3 / 5;
+  background-color: grey;
+}
+
+.item-h {
+  grid-column: 2;
+  grid-row: 5 / 7;
+
+}
+
+.item-k {
+  grid-column: 2;
+  grid-row: 7 / 9;
+  background-color: grey;
+}
+
+.item-grun {
+  grid-area: item-j;
+  background-color: olivedrab;
+}
+.container3{
+  width: 51.5rem;
+  margin: auto;
+  margin-top: 2.2rem;
+}
+
+.container3__table{
+  grid-auto-flow:
+margin: 10px auto;
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 10px; */
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  grid-row-gap: 2.8rem;
+  grid-column-gap: 2.8rem ;
+  
+  
+}
+
+.container3__image{
+  display: block;
+  width: 14.8rem;
+  /* height: 14.8rem; */
+  object-fit: cover;
+  align-self: center;
+}
+

@@ -1,0 +1,82 @@
+@media screen and (max-width:1200px){
+   
+}
+
+@media screen and (max-width:800px){
+h1{
+font-size: 24px;
+}
+.block3__colums{
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width:600px){
+  h2{
+      font-size: 20px;
+  }  
+  h2{
+      font-size: 16px;
+  }
+  
+  p{
+      font-size: 12px;
+  }
+  .block3__tours {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .block3__tours img{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  } 
+  .block4 {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+}
+.block4__info{
+    grid-area: a;
+    width: 100%;
+}
+.block4__info-container{
+    width: 100%;
+    margin: auto;
+    padding: 5rem;
+}
+.block4__image{
+    grid-area: b;
+}
+.block4__logos{
+    grid-area: c;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+.block4__logos_container {
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.2rem;
+    grid-template-areas:
+        "nasa spacex spacex roscosmos "
+        "cnsa esa esa roscosmos";
+}
+.block4__logos h3{
+    font-size: 14px;
+    margin: auto;
+}
+}
+
+@media screen and (max-width:300px){
+    
+}
